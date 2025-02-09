@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Değişkenleri (Custom Properties - Variables)</title>
+    <style>
+        /* CSS değişkenlerinin tanımlanması */
+        :root {
+            --primary-color: lightblue;
+            --secondary-color: lightgreen;
+            --padding-size: 20px;
+            --margin-size: 10px;
+        }
+
+        /* CSS değişkenlerinin kullanımı */
+        .box {
+            background-color: var(--primary-color);
+            color: black;
+            padding: var(--padding-size);
+            margin: var(--margin-size) 0;
+            text-align: center;
+        }
+
+        .box-secondary {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Değişkenleri (Custom Properties - Variables)</h2>
+    <div class="box">Bu kutu, birincil renk ile stilize edilmiştir.</div>
+    <div class="box box-secondary">Bu kutu, ikincil renk ile stilize edilmiştir.</div>
+    <p>Bu örnek, CSS değişkenlerinin nasıl tanımlandığını ve kullanıldığını gösterir.</p>
+</body>
+</html>

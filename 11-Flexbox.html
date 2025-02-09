@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esneklik ve Düzeni (Flexbox)</title>
+    <style>
+        /* Flex container */
+        .flex-container {
+            display: flex; /* Flexbox etkinleştirildi */
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Flex items */
+        .flex-item {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* justify-content: Flex öğelerini yatayda hizalama */
+        .justify-content-center {
+            justify-content: center; /* Ortaya hizala */
+        }
+
+        .justify-content-space-between {
+            justify-content: space-between; /* Aralarında boşluk bırak */
+        }
+
+        /* align-items: Flex öğelerini dikeyde hizalama */
+        .align-items-center {
+            align-items: center; /* Ortaya hizala */
+            height: 200px; /* Konteyner yüksekliği */
+        }
+
+        /* flex-wrap: Flex öğelerinin sarılması */
+        .flex-wrap {
+            flex-wrap: wrap; /* Sarılabilir */
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexbox Kullanımı</h2>
+
+    <!-- justify-content: center -->
+    <div class="flex-container justify-content-center">
+        <div class="flex-item">Öğe 1</div>
+        <div class="flex-item">Öğe 2</div>
+        <div class="flex-item">Öğe 3</div>
+    </div>
+
+    <!-- justify-content: space-between -->
+    <div class="flex-container justify-content-space-between">
+        <div class="flex-item">Öğe 1</div>
+        <div class="flex-item">Öğe 2</div>
+        <div class="flex-item">Öğe 3</div>
+    </div>
+
+    <!-- align-items: center -->
+    <div class="flex-container align-items-center">
+        <div class="flex-item">Öğe 1</div>
+        <div class="flex-item">Öğe 2</div>
+        <div class="flex-item">Öğe 3</div>
+    </div>
+
+    <!-- flex-wrap: wrap -->
+    <div class="flex-container flex-wrap">
+        <div class="flex-item">Öğe 1</div>
+        <div class="flex-item">Öğe 2</div>
+        <div class="flex-item">Öğe 3</div>
+        <div class="flex-item">Öğe 4</div>
+        <div class="flex-item">Öğe 5</div>
+        <div class="flex-item">Öğe 6</div>
+    </div>
+</body>
+</html>

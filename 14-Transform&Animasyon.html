@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform ve Animasyonlar</title>
+    <style>
+        /* Transform: rotate */
+        .rotate {
+            transform: rotate(45deg); /* 45 derece döndürme */
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        /* Transform: scale */
+        .scale {
+            transform: scale(1.5); /* 1.5 kat büyütme */
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        /* Transform: translate */
+        .translate {
+            transform: translate(50px, 50px); /* 50px sağa ve 50px aşağı taşıma */
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        /* Transition */
+        .transition {
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            margin: 10px 0;
+            text-align: center;
+            transition: background-color 0.5s ease; /* Arka plan rengini 0.5 saniyede değiştir */
+        }
+
+        .transition:hover {
+            background-color: orange; /* Üzerine gelindiğinde arka plan rengi */
+        }
+
+        /* Animation */
+        @keyframes example {
+            from {background-color: lightpink;}
+            to {background-color: lightblue;}
+        }
+
+        .animation {
+            background-color: lightpink;
+            padding: 20px;
+            margin: 10px 0;
+            text-align: center;
+            animation: example 2s infinite alternate; /* 2 saniyede bir arka plan rengini değiştir */
+        }
+    </style>
+</head>
+<body>
+    <h2>Transform ve Animasyonlar</h2>
+
+    <!-- Transform: rotate -->
+    <div class="rotate">Bu kutu 45 derece döndürülmüştür (rotate).</div>
+
+    <!-- Transform: scale -->
+    <div class="scale">Bu kutu 1.5 kat büyütülmüştür (scale).</div>
+
+    <!-- Transform: translate -->
+    <div class="translate">Bu kutu 50px sağa ve 50px aşağı taşınmıştır (translate).</div>
+
+    <!-- Transition -->
+    <div class="transition">Üzerine gelindiğinde arka plan rengi değişir (transition).</div>
+
+    <!-- Animation -->
+    <div class="animation">Bu kutunun arka plan rengi sürekli değişir (animation).</div>
+</body>
+</html>

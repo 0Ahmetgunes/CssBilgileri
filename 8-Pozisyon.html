@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozisyonlandırma (Positioning)</title>
+    <style>
+        /* Statik (static) pozisyonlandırma: Varsayılan pozisyonlandırma */
+        .static-box {
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Göreli (relative) pozisyonlandırma: Normal akışa göre pozisyonlandırma */
+        .relative-box {
+            position: relative;
+            top: 20px; /* Normal konumundan 20px aşağı */
+            left: 20px; /* Normal konumundan 20px sağa */
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Mutlak (absolute) pozisyonlandırma: En yakın konumlandırılmış ata elemanına göre pozisyonlandırma */
+        .absolute-box {
+            position: absolute;
+            top: 50px; /* Üstten 50px */
+            left: 50px; /* Soldan 50px */
+            background-color: lightcoral;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Sabit (fixed) pozisyonlandırma: Görüntüleme alanına göre pozisyonlandırma */
+        .fixed-box {
+            position: fixed;
+            bottom: 10px; /* Alttan 10px */
+            right: 10px; /* Sağdan 10px */
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Yapışkan (sticky) pozisyonlandırma: Kaydırma sırasında belirli bir noktada sabitlenir */
+        .sticky-box {
+            position: -webkit-sticky; /* Safari için */
+            position: sticky;
+            top: 0; /* Üstten 0px */
+            background-color: lightpink;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Konteyner: Mutlak pozisyonlandırma örneği için */
+        .container {
+            position: relative;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Statik (static) pozisyonlandırma -->
+    <div class="static-box">Bu kutu statik pozisyonlandırılmıştır.</div>
+
+    <!-- Göreli (relative) pozisyonlandırma -->
+    <div class="relative-box">Bu kutu göreli pozisyonlandırılmıştır.</div>
+
+    <!-- Konteyner: Mutlak pozisyonlandırma örneği için -->
+    <div class="container">
+        <!-- Mutlak (absolute) pozisyonlandırma -->
+        <div class="absolute-box">Bu kutu mutlak pozisyonlandırılmıştır.</div>
+    </div>
+
+    <!-- Sabit (fixed) pozisyonlandırma -->
+    <div class="fixed-box">Bu kutu sabit pozisyonlandırılmıştır.</div>
+
+    <!-- Yapışkan (sticky) pozisyonlandırma -->
+    <div class="sticky-box">Bu kutu yapışkan pozisyonlandırılmıştır.</div>
+</body>
+</html>

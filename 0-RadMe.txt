@@ -1,0 +1,89 @@
+# Temel CSS Konuları
+- CSS Nedir?
+
+- CSS'in HTML ile Kullanımı (Inline, Internal, External CSS)
+
+- Seçiciler (Selectors)
+  - Evrensel (*)
+  - Tür (Element) (h1, p, div)
+  - Sınıf (.class)
+  - ID (#id)
+  - Grup (h1, p, div)
+  - Bağlantı (Attribute) Seçicileri
+
+- CSS Kutu Modeli (Box Model)
+  - Padding
+  - Margin
+  - Border
+  - Content
+
+- Renkler ve Arka Planlar
+  - Renk tanımlama (RGB, HEX, HSL)
+  - Opaklık (opacity)
+  - Arka plan resmi ve renkleri
+
+- Metin ve Yazı Tipleri (Typography)
+  - Font ailesi (font-family)
+  - Font boyutu (font-size)
+  - Kalınlık (font-weight)
+  - Satır yüksekliği (line-height)
+  - Metin hizalama (text-align)
+
+- Listeler ve Tabloların Stilleri
+  - Liste stilleri
+  - Tablo biçimlendirme
+
+- Bağlantılar ve Düğmeler
+  - Link efektleri (:hover, :active, :visited)
+  - Düğme stilleri
+
+# Orta Seviye CSS Konuları
+
+- Pozisyonlandırma (Positioning)
+  - Statik (static)
+  - Göreli (relative)
+  - Mutlak (absolute)
+  - Sabit (fixed)
+  - Yapışkan (sticky)
+
+- Ekran Görüntüleme (Display) ve Görünürlük (Visibility)
+  - block, inline, inline-block, none
+  - Görünürlük kontrolü (visibility, opacity)
+
+- Float ve Clear Kullanımı
+
+- Esneklik ve Düzeni (Flexbox)
+  - display: flex
+  - justify-content
+  - align-items
+  - flex-wrap
+
+- Grid Sistemi (CSS Grid)
+  - Satır ve sütun yapıları
+  - grid-template-rows ve grid-template-columns
+
+- Medya Sorguları (Media Queries) ve Duyarlı Tasarım (Responsive Design)
+
+- Transform ve Animasyonlar
+  - transform: rotate, scale, translate
+  - transition
+  - animation
+
+- Gelişmiş Seçiciler
+  - nth-child
+  - first-child, last-child
+  - not()
+
+- CSS Değişkenleri (Custom Properties - Variables)
+
+----------------------------------------------------------------------
+# İleri Seviye CSS Konuları
+- SASS ve LESS (CSS Ön İşlemcileri)
+- İç içe Geçmiş Seçiciler ve Miras (Inheritance)
+- Dark Mode ve Temalar
+- CSS Blend Mode ve Filtreler
+- Geçişler (Transitions) ve Anahtar Çerçeveler (Keyframes)
+- İçerik Yerleştirme (Object-fit, Object-position)
+- Scroll Efektleri (Parallax, Smooth Scroll)
+- Clip-path ve Masking Teknikleri
+- CSS ile 3D Tasarım (Perspective, Transform 3D)

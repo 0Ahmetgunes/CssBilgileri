@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelişmiş Seçiciler</title>
+    <style>
+        /* nth-child: Belirli bir sıradaki çocuk elemanı seçer */
+        .nth-child-example li:nth-child(2) {
+            background-color: lightblue; /* İkinci çocuk eleman */
+        }
+
+        /* first-child: İlk çocuk elemanı seçer */
+        .first-child-example li:first-child {
+            background-color: lightgreen; /* İlk çocuk eleman */
+        }
+
+        /* last-child: Son çocuk elemanı seçer */
+        .last-child-example li:last-child {
+            background-color: lightcoral; /* Son çocuk eleman */
+        }
+
+        /* not(): Belirli bir seçiciye uymayan elemanları seçer */
+        .not-example li:not(:first-child) {
+            background-color: lightgoldenrodyellow; /* İlk çocuk eleman hariç diğerleri */
+        }
+    </style>
+</head>
+<body>
+    <h2>Gelişmiş Seçiciler</h2>
+
+    <!-- nth-child -->
+    <h3>nth-child</h3>
+    <ul class="nth-child-example">
+        <li>Öğe 1</li>
+        <li>Öğe 2 (nth-child)</li>
+        <li>Öğe 3</li>
+    </ul>
+
+    <!-- first-child -->
+    <h3>first-child</h3>
+    <ul class="first-child-example">
+        <li>Öğe 1 (first-child)</li>
+        <li>Öğe 2</li>
+        <li>Öğe 3</li>
+    </ul>
+
+    <!-- last-child -->
+    <h3>last-child</h3>
+    <ul class="last-child-example">
+        <li>Öğe 1</li>
+        <li>Öğe 2</li>
+        <li>Öğe 3 (last-child)</li>
+    </ul>
+
+    <!-- not() -->
+    <h3>not()</h3>
+    <ul class="not-example">
+        <li>Öğe 1</li>
+        <li>Öğe 2 (not:first-child)</li>
+        <li>Öğe 3 (not:first-child)</li>
+    </ul>
+</body>
+</html>

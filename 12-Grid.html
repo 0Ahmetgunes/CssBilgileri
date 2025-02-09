@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Sistemi (CSS Grid)</title>
+    <style>
+        /* Grid container */
+        .grid-container {
+            display: grid; /* Grid sistemi etkinleştirildi */
+            grid-template-columns: 1fr 1fr 1fr; /* 3 sütunlu yapı */
+            grid-template-rows: auto; /* Satır yüksekliği otomatik */
+            gap: 10px; /* Hücreler arası boşluk */
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* Grid items */
+        .grid-item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* grid-template-rows ve grid-template-columns */
+        .custom-grid {
+            display: grid;
+            grid-template-columns: 100px 200px 100px; /* Sütun genişlikleri */
+            grid-template-rows: 100px 200px; /* Satır yükseklikleri */
+            gap: 10px;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        .custom-grid-item {
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Grid Sistemi (CSS Grid)</h2>
+
+    <!-- Satır ve sütun yapıları -->
+    <div class="grid-container">
+        <div class="grid-item">Öğe 1</div>
+        <div class="grid-item">Öğe 2</div>
+        <div class="grid-item">Öğe 3</div>
+        <div class="grid-item">Öğe 4</div>
+        <div class="grid-item">Öğe 5</div>
+        <div class="grid-item">Öğe 6</div>
+    </div>
+
+    <!-- grid-template-rows ve grid-template-columns -->
+    <h2>grid-template-rows ve grid-template-columns</h2>
+    <div class="custom-grid">
+        <div class="custom-grid-item">Öğe 1</div>
+        <div class="custom-grid-item">Öğe 2</div>
+        <div class="custom-grid-item">Öğe 3</div>
+        <div class="custom-grid-item">Öğe 4</div>
+    </div>
+</body>
+</html>

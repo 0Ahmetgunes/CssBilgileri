@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float ve Clear Kullanımı</title>
+    <style>
+        /* Float: left */
+        .float-left {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+
+        /* Float: right */
+        .float-right {
+            float: right;
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            margin: 10px;
+        }
+
+        /* Clear: both */
+        .clear-both {
+            clear: both;
+            background-color: lightcoral;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Float Kullanımı</h2>
+    <!-- Float: left -->
+    <div class="float-left">Bu kutu sola yaslanmıştır (float: left).</div>
+
+    <!-- Float: right -->
+    <div class="float-right">Bu kutu sağa yaslanmıştır (float: right).</div>
+
+    <!-- Clear: both -->
+    <div class="clear-both">Bu kutu, önceki yüzen elemanların altına yerleştirilmiştir (clear: both).</div>
+
+    <p>Bu paragraf, clear özelliği kullanılarak önceki yüzen elemanların altına yerleştirilmiştir.</p>
+</body>
+</html>

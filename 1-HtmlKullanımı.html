@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS'in HTML ile Kullanımı</title>
+    
+    <!-- Internal CSS: Stil kuralları burada tanımlanır ve bu HTML belgesi için geçerlidir -->
+    <style>
+        .internal-style {
+            color: green;
+            text-align: center;
+        }
+    </style>
+    
+    <!-- External CSS: Ayrı bir CSS dosyasından stil kuralları buraya bağlanır -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Inline CSS: Stil kuralları doğrudan HTML elemanına eklenir -->
+    <h1 style="color: blue; text-align: center;">Inline CSS ile Merhaba Dünya!</h1>
+    
+    <!-- Internal CSS: Bu eleman internal CSS ile stillendirilmiştir -->
+    <h1 class="internal-style">Internal CSS ile Merhaba Dünya!</h1>
+    
+    <!-- External CSS: Bu eleman external CSS ile stillendirilmiştir -->
+    <h1 class="external-style">External CSS ile Merhaba Dünya!</h1>
+</body>
+</html>

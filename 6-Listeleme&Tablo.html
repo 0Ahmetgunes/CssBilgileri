@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listeler ve Tabloların Stilleri</title>
+    <style>
+        /* Liste stilleri */
+        ul.styled-list {
+            list-style-type: square; /* Kare madde işaretleri */
+            padding-left: 20px; /* Soldan boşluk */
+        }
+
+        ol.styled-list {
+            list-style-type: upper-roman; /* Büyük Roma rakamları */
+            padding-left: 20px; /* Soldan boşluk */
+        }
+
+        /* Tablo biçimlendirme */
+        table.styled-table {
+            width: 100%;
+            border-collapse: collapse; /* Kenarlıkları birleştir */
+        }
+
+        table.styled-table th, table.styled-table td {
+            border: 1px solid black; /* Hücre kenarlıkları */
+            padding: 10px; /* Hücre içi boşluk */
+            text-align: left; /* Metin hizalaması */
+        }
+
+        table.styled-table th {
+            background-color: lightgray; /* Başlık hücrelerinin arka plan rengi */
+        }
+    </style>
+</head>
+<body>
+    <!-- Liste stilleri -->
+    <h2>Liste Stilleri</h2>
+    <ul class="styled-list">
+        <li>Madde 1</li>
+        <li>Madde 2</li>
+        <li>Madde 3</li>
+    </ul>
+
+    <ol class="styled-list">
+        <li>Madde I</li>
+        <li>Madde II</li>
+        <li>Madde III</li>
+    </ol>
+
+    <!-- Tablo biçimlendirme -->
+    <h2>Tablo Biçimlendirme</h2>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Başlık 1</th>
+                <th>Başlık 2</th>
+                <th>Başlık 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Veri 1</td>
+                <td>Veri 2</td>
+                <td>Veri 3</td>
+            </tr>
+            <tr>
+                <td>Veri 4</td>
+                <td>Veri 5</td>
+                <td>Veri 6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

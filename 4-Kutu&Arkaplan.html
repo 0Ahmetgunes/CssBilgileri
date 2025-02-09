@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renkler ve Arka Planlar</title>
+    <style>
+        /* Renk tanımlama (RGB) */
+        .rgb-color {
+            color: rgb(255, 0, 0); /* Kırmızı renk */
+        }
+
+        /* Renk tanımlama (HEX) */
+        .hex-color {
+            color: #00ff00; /* Yeşil renk */
+        }
+
+        /* Renk tanımlama (HSL) */
+        .hsl-color {
+            color: hsl(240, 100%, 50%); /* Mavi renk */
+        }
+
+        /* Opaklık (opacity) */
+        .opacity-example {
+            background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+            color: white;
+            padding: 10px;
+        }
+
+        /* Arka plan resmi ve renkleri */
+        .background-example {
+            background-color: lightblue; /* Açık mavi arka plan rengi */
+            background-image: url('background.jpg'); /* Arka plan resmi */
+            background-size: cover; /* Resmi kapsayacak şekilde ölçeklendir */
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Renk tanımlama (RGB) -->
+    <p class="rgb-color">Bu metin RGB ile tanımlanmış kırmızı renkte.</p>
+
+    <!-- Renk tanımlama (HEX) -->
+    <p class="hex-color">Bu metin HEX ile tanımlanmış yeşil renkte.</p>
+
+    <!-- Renk tanımlama (HSL) -->
+    <p class="hsl-color">Bu metin HSL ile tanımlanmış mavi renkte.</p>
+
+    <!-- Opaklık (opacity) -->
+    <div class="opacity-example">
+        Bu kutu yarı saydam bir arka plana sahiptir.
+    </div>
+
+    <!-- Arka plan resmi ve renkleri -->
+    <div class="background-example">
+        Bu kutu bir arka plan resmi ve renk ile stillendirilmiştir.
+    </div>
+</body>
+</html>

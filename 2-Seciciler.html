@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Seçiciler (Selectors) Örneği</title>
+    <style>
+        /* Evrensel Seçici: Tüm elemanlara uygulanır */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Tür (Element) Seçicileri: Belirli türdeki elemanlara uygulanır */
+        h1 {
+            color: blue;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        div {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Sınıf (Class) Seçicileri: Belirli bir sınıfa sahip elemanlara uygulanır */
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* ID Seçicileri: Belirli bir ID'ye sahip elemanlara uygulanır */
+        #header {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* Grup Seçicileri: Birden fazla elemanı aynı anda seçmek için kullanılır */
+        h1, p, div {
+            margin: 10px;
+        }
+
+        /* Bağlantı (Attribute) Seçicileri: Belirli bir attribute'a sahip elemanlara uygulanır */
+        a[target="_blank"] {
+            color: red;
+        }
+
+        input[type="text"] {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- ID Seçicisi: Bu eleman ID seçicisi ile stillendirilmiştir -->
+    <div id="header">Bu bir başlık.</div>
+
+    <!-- Sınıf (Class) Seçicisi: Bu eleman sınıf seçicisi ile stillendirilmiştir -->
+    <div class="container">
+        <!-- Tür (Element) Seçicisi: Bu eleman tür seçicisi ile stillendirilmiştir -->
+        <h1>Tür Seçicisi ile Merhaba Dünya!</h1>
+        
+        <!-- Sınıf (Class) Seçicisi: Bu eleman sınıf seçicisi ile stillendirilmiştir -->
+        <p class="text-center">Bu bir paragraf.</p>
+        
+        <!-- Bağlantı (Attribute) Seçicisi: Bu eleman attribute seçicisi ile stillendirilmiştir -->
+        <a href="https://example.com" target="_blank">Yeni sekmede aç</a>
+        
+        <!-- Bağlantı (Attribute) Seçicisi: Bu eleman attribute seçicisi ile stillendirilmiştir -->
+        <input type="text" placeholder="Metin girin">
+        
+        <!-- Tür (Element) Seçicisi: Bu eleman tür seçicisi ile stillendirilmiştir -->
+        <div>Bu bir div elemanıdır.</div>
+    </div>
+</body>
+</html>
